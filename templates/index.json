@@ -1421,44 +1421,19 @@
         "padding-block-end": 48
       }
     },
-    "section_PFiMkb": {
-      "type": "section",
+    "carousel_Y7cCcB": {
+      "type": "carousel",
       "blocks": {
-        "text_yjVCHn": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h2>TESTIMONIALS</h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_fMMW7C": {
+        "static-header": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "t:names.header",
+          "static": true,
           "settings": {
             "content_direction": "row",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
-            "align_baseline": false,
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
@@ -1485,14 +1460,64 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_irV9bt": {
+              "type": "text",
+              "name": "t:names.header",
+              "settings": {
+                "text": "<h2>TESTIMONIALS</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_irV9bt"
+          ]
+        },
+        "static-carousel-content": {
+          "type": "_carousel-content",
+          "name": "t:names.carousel_content",
+          "static": true,
+          "settings": {
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "height": "fit",
+            "position": "top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_qYLTpX": {
-              "type": "group",
-              "name": "t:names.column",
+            "card_ARYeg8": {
+              "type": "_card",
+              "name": "t:names.card",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1500,43 +1525,30 @@
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
                 "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
+                "aspect_ratio": "adapt",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "link": "",
                 "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 10,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {
-                "video_weLfj3": {
+                "video_Y6pN7P": {
                   "type": "video",
                   "name": "t:names.video",
                   "settings": {
                     "source": "uploaded",
                     "video": "shopify://files/videos/IMG_0700 2.MOV",
-                    "video_url": "",
                     "video_autoplay": false,
                     "video_loop": true,
                     "alt": "",
@@ -1548,20 +1560,20 @@
                     "border_opacity": 100,
                     "border_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 16,
+                    "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
-                "text_wCYLRq": {
+                "text_gkXgzB": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>ROB BAILEY</h2>",
-                    "width": "100%",
+                    "text": "<h4>ROB BAILEY</h4>",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "h4",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1580,14 +1592,14 @@
                   },
                   "blocks": {}
                 },
-                "text_K4Pr7V": {
+                "text_TwtkWH": {
                   "type": "text",
-                  "name": "t:names.description",
+                  "name": "t:names.text",
                   "settings": {
                     "text": "<p>Owner of ONWARD and Flag Nor Fail</p>",
-                    "width": "100%",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1608,14 +1620,14 @@
                 }
               },
               "block_order": [
-                "video_weLfj3",
-                "text_wCYLRq",
-                "text_K4Pr7V"
+                "video_Y6pN7P",
+                "text_gkXgzB",
+                "text_TwtkWH"
               ]
             },
-            "group_qqztWW": {
-              "type": "group",
-              "name": "t:names.column",
+            "card_wzDaXW": {
+              "type": "_card",
+              "name": "t:names.card",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1623,43 +1635,30 @@
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
                 "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
+                "aspect_ratio": "adapt",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "link": "",
                 "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 10,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {
-                "video_9AzUby": {
+                "video_bEPL9X": {
                   "type": "video",
                   "name": "t:names.video",
                   "settings": {
                     "source": "uploaded",
                     "video": "shopify://files/videos/IMG_7060 2.MOV",
-                    "video_url": "",
                     "video_autoplay": false,
                     "video_loop": true,
                     "alt": "",
@@ -1671,20 +1670,20 @@
                     "border_opacity": 100,
                     "border_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 16,
+                    "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
-                "text_hqeHbB": {
+                "text_CUrjwj": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>WARREN HOLDER</h2>",
-                    "width": "100%",
+                    "text": "<h4>WARREN HOLDER</h4>",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "h4",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1703,14 +1702,14 @@
                   },
                   "blocks": {}
                 },
-                "text_Emx6CA": {
+                "text_9f9PT9": {
                   "type": "text",
-                  "name": "t:names.description",
+                  "name": "t:names.text",
                   "settings": {
                     "text": "<p>Owner of Raised Hunting and RDC Marketing</p>",
-                    "width": "100%",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1731,14 +1730,14 @@
                 }
               },
               "block_order": [
-                "video_9AzUby",
-                "text_hqeHbB",
-                "text_Emx6CA"
+                "video_bEPL9X",
+                "text_CUrjwj",
+                "text_9f9PT9"
               ]
             },
-            "group_we4Ajt": {
-              "type": "group",
-              "name": "t:names.column",
+            "card_gUigAE": {
+              "type": "_card",
+              "name": "t:names.card",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1746,43 +1745,30 @@
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
                 "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
+                "aspect_ratio": "adapt",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "link": "",
                 "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 10,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {
-                "video_BypQE4": {
+                "video_Upia4H": {
                   "type": "video",
                   "name": "t:names.video",
                   "settings": {
                     "source": "uploaded",
                     "video": "shopify://files/videos/IMG_7694 2.mov",
-                    "video_url": "",
                     "video_autoplay": false,
                     "video_loop": true,
                     "alt": "",
@@ -1794,20 +1780,20 @@
                     "border_opacity": 100,
                     "border_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 16,
+                    "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
-                "text_RUtDFP": {
+                "text_dQgKpJ": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>NATHAN RICHARDSON</h2>",
-                    "width": "100%",
+                    "text": "<h4>NATHAN RICHARDSON</h4>",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "h4",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1826,14 +1812,14 @@
                   },
                   "blocks": {}
                 },
-                "text_KLqd3y": {
+                "text_FLj3bK": {
                   "type": "text",
-                  "name": "t:names.description",
+                  "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Owner Atonal Headwear and Relentless Merch</p>",
-                    "width": "100%",
+                    "text": "<p>Owner of Relentless Merch and Atonal Headwear</p>",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1854,14 +1840,14 @@
                 }
               },
               "block_order": [
-                "video_BypQE4",
-                "text_RUtDFP",
-                "text_KLqd3y"
+                "video_Upia4H",
+                "text_dQgKpJ",
+                "text_FLj3bK"
               ]
             },
-            "group_8AyeRe": {
-              "type": "group",
-              "name": "t:names.column",
+            "card_aMjTiR": {
+              "type": "_card",
+              "name": "t:names.card",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1869,43 +1855,30 @@
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
                 "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
+                "aspect_ratio": "adapt",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "link": "",
                 "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 10,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {
-                "video_mtyyDW": {
+                "video_C4pQjg": {
                   "type": "video",
                   "name": "t:names.video",
                   "settings": {
                     "source": "uploaded",
                     "video": "shopify://files/videos/IMG_7757 2.MOV",
-                    "video_url": "",
                     "video_autoplay": false,
                     "video_loop": true,
                     "alt": "",
@@ -1917,20 +1890,20 @@
                     "border_opacity": 100,
                     "border_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 16,
+                    "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
-                "text_6FFYre": {
+                "text_TddzV4": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>SKY CHRISTANSEN</h2>",
-                    "width": "100%",
+                    "text": "<h4>SKY CHRISTIANSEN</h4>",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "h4",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1949,14 +1922,14 @@
                   },
                   "blocks": {}
                 },
-                "text_483kKX": {
+                "text_8hMcwL": {
                   "type": "text",
-                  "name": "t:names.description",
+                  "name": "t:names.text",
                   "settings": {
                     "text": "<p>Owner of Ridge Belts</p>",
-                    "width": "100%",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1977,49 +1950,29 @@
                 }
               },
               "block_order": [
-                "video_mtyyDW",
-                "text_6FFYre",
-                "text_483kKX"
+                "video_C4pQjg",
+                "text_TddzV4",
+                "text_8hMcwL"
               ]
             }
           },
           "block_order": [
-            "group_qYLTpX",
-            "group_qqztWW",
-            "group_we4Ajt",
-            "group_8AyeRe"
+            "card_ARYeg8",
+            "card_wzDaXW",
+            "card_gUigAE",
+            "card_aMjTiR"
           ]
         }
       },
-      "block_order": [
-        "text_yjVCHn",
-        "group_fMMW7C"
-      ],
-      "name": "t:names.multicolumn",
+      "name": "t:names.carousel",
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "flex-start",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "columns": 3,
+        "mobile_columns": "1",
         "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
+        "columns_gap": 12,
         "color_scheme": "scheme-2",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
+        "icons_style": "arrow",
+        "icons_shape": "none",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
@@ -2163,7 +2116,7 @@
                   "name": "t:names.group",
                   "settings": {
                     "content_direction": "row",
-                    "vertical_on_mobile": true,
+                    "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
@@ -2247,7 +2200,7 @@
                   "name": "t:names.group",
                   "settings": {
                     "content_direction": "row",
-                    "vertical_on_mobile": true,
+                    "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
@@ -2330,7 +2283,7 @@
                   "name": "t:names.group",
                   "settings": {
                     "content_direction": "row",
-                    "vertical_on_mobile": true,
+                    "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
                     "vertical_alignment": "center",
                     "align_baseline": false,
@@ -2555,7 +2508,7 @@
     "section_7mePtJ",
     "section_R48A7w",
     "carousel_hLAYKT",
-    "section_PFiMkb",
+    "carousel_Y7cCcB",
     "section_mHhCiR",
     "divider_QWJLJe"
   ]
