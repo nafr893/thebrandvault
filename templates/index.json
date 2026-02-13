@@ -645,8 +645,9 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/DSC05557.webp",
                     "link": "",
-                    "image_ratio": "adapt",
+                    "image_ratio": "square",
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -667,7 +668,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p>Artistry in action </p>",
+                    "text": "<p>T&K HUNTING</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -754,8 +755,9 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/SKRE_Gear_Cover.webp",
                     "link": "",
-                    "image_ratio": "adapt",
+                    "image_ratio": "square",
                     "width": "fill",
                     "custom_width": 100,
                     "width_mobile": "fill",
@@ -776,7 +778,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p>Uncompromising standards </p>",
+                    "text": "<p>SKRE GEAR</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1064,7 +1066,7 @@
         "mobile_columns": "1",
         "section_width": "page-width",
         "columns_gap": 12,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "icons_style": "arrow",
         "icons_shape": "none",
         "padding-block-start": 48,
