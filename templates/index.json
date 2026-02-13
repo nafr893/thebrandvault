@@ -2110,11 +2110,11 @@
                 "text_JCXVhM": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>START YOUR JOURNEY TODAY</h2>",
+                    "text": "<h2>START YOUR JOURNEY</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "h1",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
