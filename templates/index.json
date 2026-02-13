@@ -353,7 +353,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_8AyeRe": {
+            "group_qYLTpX": {
               "type": "group",
               "name": "t:names.column",
               "settings": {
@@ -393,12 +393,12 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "video_mtyyDW": {
+                "video_weLfj3": {
                   "type": "video",
                   "name": "t:names.video",
                   "settings": {
                     "source": "uploaded",
-                    "video": "shopify://files/videos/IMG_7757 2.MOV",
+                    "video": "shopify://files/videos/IMG_0700 2.MOV",
                     "video_autoplay": false,
                     "video_loop": true,
                     "alt": "",
@@ -416,11 +416,11 @@
                   },
                   "blocks": {}
                 },
-                "text_6FFYre": {
+                "text_wCYLRq": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>SKY CHRISTANSEN</h2>",
+                    "text": "<h2>ROB BAILEY</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -442,11 +442,11 @@
                   },
                   "blocks": {}
                 },
-                "text_483kKX": {
+                "text_K4Pr7V": {
                   "type": "text",
                   "name": "t:names.description",
                   "settings": {
-                    "text": "<p>Owner of Ridge Belts</p>",
+                    "text": "<p>Owner of ONWARD and Flag Nor Fail</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -470,131 +470,9 @@
                 }
               },
               "block_order": [
-                "video_mtyyDW",
-                "text_6FFYre",
-                "text_483kKX"
-              ]
-            },
-            "group_we4Ajt": {
-              "type": "group",
-              "name": "t:names.column",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 10,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "video_BypQE4": {
-                  "type": "video",
-                  "name": "t:names.video",
-                  "settings": {
-                    "source": "uploaded",
-                    "video": "shopify://files/videos/IMG_7694 2.mov",
-                    "video_autoplay": false,
-                    "video_loop": true,
-                    "alt": "",
-                    "custom_width": 100,
-                    "custom_width_mobile": 100,
-                    "aspect_ratio": "auto",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_RUtDFP": {
-                  "type": "text",
-                  "name": "t:names.heading",
-                  "settings": {
-                    "text": "<h2>NATHAN RICHARDSON</h2>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h4",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_KLqd3y": {
-                  "type": "text",
-                  "name": "t:names.description",
-                  "settings": {
-                    "text": "<p>Owner Atonal Headwear and Relentless Merch</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "video_BypQE4",
-                "text_RUtDFP",
-                "text_KLqd3y"
+                "video_weLfj3",
+                "text_wCYLRq",
+                "text_K4Pr7V"
               ]
             },
             "group_qqztWW": {
@@ -719,7 +597,7 @@
                 "text_Emx6CA"
               ]
             },
-            "group_qYLTpX": {
+            "group_we4Ajt": {
               "type": "group",
               "name": "t:names.column",
               "settings": {
@@ -759,12 +637,12 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "video_weLfj3": {
+                "video_BypQE4": {
                   "type": "video",
                   "name": "t:names.video",
                   "settings": {
                     "source": "uploaded",
-                    "video": "shopify://files/videos/IMG_0700 2.MOV",
+                    "video": "shopify://files/videos/IMG_7694 2.mov",
                     "video_autoplay": false,
                     "video_loop": true,
                     "alt": "",
@@ -782,11 +660,11 @@
                   },
                   "blocks": {}
                 },
-                "text_wCYLRq": {
+                "text_RUtDFP": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>ROB BAILEY</h2>",
+                    "text": "<h2>NATHAN RICHARDSON</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -808,11 +686,11 @@
                   },
                   "blocks": {}
                 },
-                "text_K4Pr7V": {
+                "text_KLqd3y": {
                   "type": "text",
                   "name": "t:names.description",
                   "settings": {
-                    "text": "<p>Owner of ONWARD and Flag Nor Fail</p>",
+                    "text": "<p>Owner Atonal Headwear and Relentless Merch</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -836,17 +714,139 @@
                 }
               },
               "block_order": [
-                "video_weLfj3",
-                "text_wCYLRq",
-                "text_K4Pr7V"
+                "video_BypQE4",
+                "text_RUtDFP",
+                "text_KLqd3y"
+              ]
+            },
+            "group_8AyeRe": {
+              "type": "group",
+              "name": "t:names.column",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 8,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 10,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "video_mtyyDW": {
+                  "type": "video",
+                  "name": "t:names.video",
+                  "settings": {
+                    "source": "uploaded",
+                    "video": "shopify://files/videos/IMG_7757 2.MOV",
+                    "video_autoplay": false,
+                    "video_loop": true,
+                    "alt": "",
+                    "custom_width": 100,
+                    "custom_width_mobile": 100,
+                    "aspect_ratio": "auto",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_6FFYre": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>SKY CHRISTANSEN</h2>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_483kKX": {
+                  "type": "text",
+                  "name": "t:names.description",
+                  "settings": {
+                    "text": "<p>Owner of Ridge Belts</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "video_mtyyDW",
+                "text_6FFYre",
+                "text_483kKX"
               ]
             }
           },
           "block_order": [
-            "group_8AyeRe",
-            "group_we4Ajt",
+            "group_qYLTpX",
             "group_qqztWW",
-            "group_qYLTpX"
+            "group_we4Ajt",
+            "group_8AyeRe"
           ]
         }
       },
