@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* temporrily hide the header actions (cart and account) */
-header-actions{
-  display: ; 
+cart-icon.header-actions__cart-icon, button.account-button.header-actions__action {
+  display: none !important; 
 }
 
