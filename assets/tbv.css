@@ -31,3 +31,9 @@
 h1, h2, h3, h4, h5 {
     font-family: khand, sans-serif !important;
 }
+
+/* temporrily hide the header actions (cart and account) */
+header-actions{
+  display: none; 
+}
+
