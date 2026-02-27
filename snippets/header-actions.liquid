@@ -226,10 +226,16 @@
 </header-actions>
 
 {% stylesheet %}
+  /* Stretch header-actions to full column height so the button can fill it */
+  .header__column--right:has(.header-menu-button) header-actions {
+    align-self: stretch;
+  }
+
   .header-menu-button {
-    padding: 0.5rem 1.25rem;
-    border: 1px solid currentColor;
-    border-radius: 4px;
+    padding: 0 1.25rem;
+    border: none;
+    border-left: 1px solid currentColor;
+    border-radius: 0;
     font-size: 0.8125rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -237,7 +243,9 @@
     white-space: nowrap;
     transition: opacity var(--animation-speed) var(--animation-easing);
     line-height: 1;
-    height: auto;
+    align-self: stretch;
+    /* Bleed past the header's block padding to reach the row edges */
+    margin-block: calc(-1 * var(--header-padding));
   }
 
   .header-menu-button:hover {
