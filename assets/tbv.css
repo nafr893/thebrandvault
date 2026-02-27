@@ -34,6 +34,6 @@ h1, h2, h3, h4, h5 {
 
 /* temporrily hide the header actions (cart and account) */
 header-actions{
-  display: none; 
+  display: none !important; 
 }
 
