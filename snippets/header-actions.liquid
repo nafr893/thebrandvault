@@ -281,6 +281,11 @@
   <script>
     (function () {
       var drawer = document.getElementById('desktop-menu-drawer');
+
+      // Move to <body> so it escapes any transform/will-change stacking context
+      // on the sticky header (which would otherwise clip the fixed-position panel)
+      document.body.appendChild(drawer);
+
       var backdrop = document.getElementById('desktop-menu-drawer-backdrop');
       var closeBtn = document.getElementById('desktop-menu-drawer-close');
 
