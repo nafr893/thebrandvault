@@ -1267,7 +1267,7 @@
                   "name": "t:names.image",
                   "settings": {
                     "image": "shopify://shop_images/T_K_Hunting_Cover_v1.webp",
-                    "link": "",
+                    "link": "shopify://pages/t-k-huting",
                     "image_ratio": "square",
                     "width": "fill",
                     "custom_width": 100,
