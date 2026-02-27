@@ -31,7 +31,7 @@
       type="button"
       class="header-menu-button button button-unstyled mobile:hidden"
       style="background-color: {{ section.settings.menu_button_bg_color }}; color: {{ section.settings.menu_button_text_color }};"
-      onclick="document.querySelector('#Details-menu-drawer-container > summary')?.click()"
+      onclick="(function(){ var d=document.querySelector('header-drawer'); if(!d) return; if(d.isOpen){ d.close(); } else { var det=d.querySelector('details'); if(det) det.open=true; d.open(); } })()"
       aria-label="{{ section.settings.menu_button_label | default: 'Menu' }}"
     >
       {{ section.settings.menu_button_label | default: 'Menu' }}
@@ -232,6 +232,9 @@
   }
 
   .header-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-inline-start: 1.25rem;
     padding-inline-end: calc(1.25rem + var(--page-margin));
     padding-block: 0;
@@ -254,6 +257,22 @@
 
   .header-menu-button:hover {
     opacity: 0.75;
+  }
+
+  /* On desktop with menu style, .header__drawer is display:none which also hides
+     the position:fixed .menu-drawer panel. Override to allow the panel to open
+     while keeping the hamburger summary hidden. */
+  @media screen and (min-width: 750px) {
+    #header-component[data-menu-style='menu'] .header__drawer {
+      display: block;
+      min-height: 0;
+      height: 0;
+      overflow: visible;
+    }
+
+    #header-component[data-menu-style='menu'] .header__drawer summary {
+      display: none;
+    }
   }
 
   .account-popover {
