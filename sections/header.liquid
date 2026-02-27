@@ -1354,6 +1354,37 @@
     },
     {
       "type": "header",
+      "content": "Menu button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_menu_button",
+      "label": "Show menu button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "menu_button_label",
+      "label": "Button text",
+      "default": "Menu",
+      "visible_if": "{{ section.settings.show_menu_button }}"
+    },
+    {
+      "type": "color",
+      "id": "menu_button_bg_color",
+      "label": "Background color",
+      "default": "#ffffff",
+      "visible_if": "{{ section.settings.show_menu_button }}"
+    },
+    {
+      "type": "color",
+      "id": "menu_button_text_color",
+      "label": "Text color",
+      "default": "#000000",
+      "visible_if": "{{ section.settings.show_menu_button }}"
+    },
+    {
+      "type": "header",
       "content": "t:content.home_page"
     },
     {

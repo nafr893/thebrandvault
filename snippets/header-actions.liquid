@@ -26,6 +26,18 @@
 <header-actions
   {{- block.shopify_attributes -}}
 >
+  {% if section.settings.show_menu_button %}
+    <button
+      type="button"
+      class="header-menu-button button button-unstyled mobile:hidden"
+      style="background-color: {{ section.settings.menu_button_bg_color }}; color: {{ section.settings.menu_button_text_color }};"
+      onclick="document.querySelector('#Details-menu-drawer-container > summary')?.click()"
+      aria-label="{{ section.settings.menu_button_label | default: 'Menu' }}"
+    >
+      {{ section.settings.menu_button_label | default: 'Menu' }}
+    </button>
+  {% endif %}
+
   {% if shop.customer_accounts_enabled %}
     <script
       src="{{ 'dialog.js' | asset_url }}"
@@ -214,6 +226,24 @@
 </header-actions>
 
 {% stylesheet %}
+  .header-menu-button {
+    padding: 0.5rem 1.25rem;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity var(--animation-speed) var(--animation-easing);
+    line-height: 1;
+    height: auto;
+  }
+
+  .header-menu-button:hover {
+    opacity: 0.75;
+  }
+
   .account-popover {
     --account-popover-min-width: 22rem;
     --account-actions-max-width: 22rem;
