@@ -320,11 +320,10 @@
 {% endif %}
 
 {% stylesheet %}
-  /* Stretch header-actions to full column height so the button can fill it (desktop only) */
-  @media screen and (min-width: 750px) {
-    .header__column--right:has(.header-menu-button) header-actions {
-      align-self: stretch;
-    }
+  /* Stretch header-actions so the button can fill the full header row height */
+  .header__column--right:has(.header-menu-button) header-actions,
+  #header-component[data-menu-style='drawer'] header-actions:has(.header-menu-button) {
+    align-self: stretch;
   }
 
   .header-menu-button {
@@ -332,7 +331,8 @@
     align-items: center;
     justify-content: center;
     padding-inline: 1.25rem;
-    padding-block: var(--padding-sm);
+    padding-block: 0;
+    align-self: stretch;
     border: none;
     border-left: 1px solid currentColor;
     border-radius: 0;
@@ -347,8 +347,6 @@
     @media screen and (min-width: 750px) {
       padding-inline-start: 2rem;
       padding-inline-end: 2rem;
-      padding-block: 0;
-      align-self: stretch;
       /* Bleed past the header's block padding to reach the row edges */
       margin-block: calc(-1 * var(--header-padding));
       /* Bleed past the page-width inline padding to reach the screen right edge */
