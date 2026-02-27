@@ -38,3 +38,7 @@ header-menu.header-menu {
 }
 
  }
+
+ summary.header__icon.header__icon--menu.header__icon--summary {
+  display: none !important; 
+ }
