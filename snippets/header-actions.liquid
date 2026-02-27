@@ -232,7 +232,9 @@
   }
 
   .header-menu-button {
-    padding: 0 1.25rem;
+    padding-inline-start: 1.25rem;
+    padding-inline-end: calc(1.25rem + var(--page-margin));
+    padding-block: 0;
     border: none;
     border-left: 1px solid currentColor;
     border-radius: 0;
@@ -246,6 +248,8 @@
     align-self: stretch;
     /* Bleed past the header's block padding to reach the row edges */
     margin-block: calc(-1 * var(--header-padding));
+    /* Bleed past the page-width inline padding to reach the screen right edge */
+    margin-inline-end: calc(-1 * var(--page-margin));
   }
 
   .header-menu-button:hover {

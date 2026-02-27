@@ -52,7 +52,11 @@
   endcapture
 
   capture drawer_menu
-    content_for 'block', type: '_header-menu', id: 'header-menu', variant: 'mobile'
+    if section.settings.drawer_menu != blank
+      render 'header-drawer', linklist: linklists[section.settings.drawer_menu], class: 'header-drawer--mobile', section: section
+    else
+      content_for 'block', type: '_header-menu', id: 'header-menu', variant: 'mobile'
+    endif
   endcapture
 
   capture navigation_bar
@@ -644,15 +648,15 @@
       padding-inline: 0 var(--padding-3xs);
 
       .header-logo {
-        grid-area: center;
+        grid-area: leftA;
+      }
+
+      header-drawer {
+        grid-area: rightA;
       }
 
       &:not(:has(header-actions)) .search-action {
         grid-area: leftB;
-      }
-
-      &:not(:has(.account-actions)) .search-action {
-        grid-area: rightA;
       }
 
       .search-action {
@@ -679,15 +683,15 @@
     padding-inline: 0 var(--padding-3xs);
 
     .header-logo {
-      grid-area: center;
+      grid-area: leftA;
+    }
+
+    header-drawer {
+      grid-area: rightA;
     }
 
     &:not(:has(header-actions)) .search-action {
       grid-area: leftB;
-    }
-
-    &:not(:has(.account-actions)) .search-action {
-      grid-area: rightA;
     }
 
     .search-action {
@@ -1071,6 +1075,12 @@
         }
       ],
       "default": "top"
+    },
+    {
+      "type": "link_list",
+      "id": "drawer_menu",
+      "label": "Drawer menu",
+      "info": "Menu shown in the slide-out drawer. Defaults to the main header menu if not set."
     },
     {
       "type": "header",
