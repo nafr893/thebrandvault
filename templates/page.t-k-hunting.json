@@ -270,8 +270,8 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>T&K hand makes some of the best hunting gear in the industry. Their products are packed with features, and they use only the best quality materials to ensure that your gear holds up in the field. However, they had the challenge of <em>presenting</em> their products on their site without overwhelming their customer with information. </p>",
-            "width": "fit-content",
+            "text": "<p>T&K handmakes some of the best hunting gear in the industry. Their products are packed with features and built from the highest-quality materials to perform in the field. The challenge was presenting those products online without overwhelming customers with information.</p>",
+            "width": "100%",
             "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
@@ -295,6 +295,7 @@
         "button_AUYwHn": {
           "type": "button",
           "name": "t:names.button",
+          "disabled": true,
           "settings": {
             "label": "Shop now",
             "link": "shopify://collections/all",
@@ -313,7 +314,7 @@
         "text_VRM8rV",
         "button_AUYwHn"
       ],
-      "name": "t:names.rich_text_section",
+      "name": "The Challenge",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
