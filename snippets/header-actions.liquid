@@ -29,7 +29,7 @@
   {% if section.settings.show_menu_button %}
     <button
       type="button"
-      class="header-menu-button button button-unstyled mobile:hidden"
+      class="header-menu-button button button-unstyled"
       style="background-color: {{ section.settings.menu_button_bg_color }}; color: {{ section.settings.menu_button_text_color }};"
       onclick="window.toggleDesktopMenuDrawer && window.toggleDesktopMenuDrawer()"
       aria-label="{{ section.settings.menu_button_label | default: 'Menu' }}"
@@ -355,15 +355,11 @@
 
   /* Desktop menu drawer */
   .desktop-menu-drawer {
-    display: none;
-
-    @media screen and (min-width: 750px) {
-      display: block;
-      position: fixed;
-      inset: 0;
-      z-index: var(--layer-menu-drawer);
-      pointer-events: none;
-    }
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: var(--layer-menu-drawer);
+    pointer-events: none;
   }
 
   .desktop-menu-drawer.is-open {
