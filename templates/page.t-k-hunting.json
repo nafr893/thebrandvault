@@ -87,6 +87,7 @@
         },
         "text_Ra4Wr9": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>American made hunting gear, built with </p>",
             "width": "fit-content",
