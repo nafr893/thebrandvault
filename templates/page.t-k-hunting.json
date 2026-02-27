@@ -91,7 +91,7 @@
           "settings": {
             "label": "VISIT SITE",
             "link": "https://tandkhuntinggear.com",
-            "open_in_new_tab": false,
+            "open_in_new_tab": true,
             "style_class": "button",
             "width": "fit-content",
             "custom_width": 100,
