@@ -31,7 +31,7 @@
       type="button"
       class="header-menu-button button button-unstyled mobile:hidden"
       style="background-color: {{ section.settings.menu_button_bg_color }}; color: {{ section.settings.menu_button_text_color }};"
-      onclick="(function(){ var d=document.querySelector('header-drawer'); if(!d) return; if(d.isOpen){ d.close(); } else { var det=d.querySelector('details'); if(det) det.open=true; d.open(); } })()"
+      onclick="window.toggleDesktopMenuDrawer && window.toggleDesktopMenuDrawer()"
       aria-label="{{ section.settings.menu_button_label | default: 'Menu' }}"
     >
       {{ section.settings.menu_button_label | default: 'Menu' }}
@@ -225,6 +225,95 @@
   {% endif %}
 </header-actions>
 
+{% if section.settings.show_menu_button %}
+  {%- liquid
+    if section.settings.drawer_menu != blank
+      assign desktop_nav = linklists[section.settings.drawer_menu]
+    else
+      assign desktop_nav = linklists['main-menu']
+    endif
+  -%}
+
+  <div
+    class="desktop-menu-drawer"
+    id="desktop-menu-drawer"
+    aria-hidden="true"
+    aria-label="{{ section.settings.menu_button_label | default: 'Menu' }}"
+  >
+    <div class="desktop-menu-drawer__backdrop" id="desktop-menu-drawer-backdrop"></div>
+
+    <div class="desktop-menu-drawer__panel" role="dialog">
+      <button
+        class="desktop-menu-drawer__close button button-unstyled"
+        id="desktop-menu-drawer-close"
+        aria-label="{{ 'actions.close_dialog' | t }}"
+      >
+        <span class="svg-wrapper" aria-hidden="true">
+          {{- 'icon-close.svg' | inline_asset_content -}}
+        </span>
+      </button>
+
+      <nav aria-label="{{ section.settings.menu_button_label | default: 'Menu' }}">
+        <ul class="desktop-menu-drawer__list">
+          {%- for link in desktop_nav.links -%}
+            <li class="desktop-menu-drawer__item">
+              <a href="{{ link.url }}" class="desktop-menu-drawer__link">
+                {{- link.title -}}
+              </a>
+              {%- if link.links.size > 0 -%}
+                <ul class="desktop-menu-drawer__sublist">
+                  {%- for sublink in link.links -%}
+                    <li>
+                      <a href="{{ sublink.url }}" class="desktop-menu-drawer__sublink">
+                        {{- sublink.title -}}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var drawer = document.getElementById('desktop-menu-drawer');
+      var backdrop = document.getElementById('desktop-menu-drawer-backdrop');
+      var closeBtn = document.getElementById('desktop-menu-drawer-close');
+
+      function openDrawer() {
+        drawer.classList.add('is-open');
+        drawer.setAttribute('aria-hidden', 'false');
+        document.documentElement.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        drawer.classList.remove('is-open');
+        drawer.setAttribute('aria-hidden', 'true');
+        document.documentElement.style.overflow = '';
+      }
+
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+
+      document.addEventListener('keyup', function (e) {
+        if (e.key === 'Escape' && drawer.classList.contains('is-open')) closeDrawer();
+      });
+
+      window.toggleDesktopMenuDrawer = function () {
+        if (drawer.classList.contains('is-open')) {
+          closeDrawer();
+        } else {
+          openDrawer();
+        }
+      };
+    })();
+  </script>
+{% endif %}
+
 {% stylesheet %}
   /* Stretch header-actions to full column height so the button can fill it */
   .header__column--right:has(.header-menu-button) header-actions {
@@ -259,20 +348,113 @@
     opacity: 0.75;
   }
 
-  /* On desktop with menu style, .header__drawer is display:none which also hides
-     the position:fixed .menu-drawer panel. Override to allow the panel to open
-     while keeping the hamburger summary hidden. */
-  @media screen and (min-width: 750px) {
-    #header-component[data-menu-style='menu'] .header__drawer {
-      display: block;
-      min-height: 0;
-      height: 0;
-      overflow: visible;
-    }
+  /* Desktop menu drawer */
+  .desktop-menu-drawer {
+    display: none;
 
-    #header-component[data-menu-style='menu'] .header__drawer summary {
-      display: none;
+    @media screen and (min-width: 750px) {
+      display: block;
+      position: fixed;
+      inset: 0;
+      z-index: var(--layer-menu-drawer);
+      pointer-events: none;
     }
+  }
+
+  .desktop-menu-drawer.is-open {
+    pointer-events: auto;
+  }
+
+  .desktop-menu-drawer__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .desktop-menu-drawer.is-open .desktop-menu-drawer__backdrop {
+    opacity: 1;
+  }
+
+  .desktop-menu-drawer__panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25rem;
+    max-width: 90vw;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-xl);
+    border-left: var(--style-border-drawer);
+    box-shadow: var(--shadow-drawer);
+  }
+
+  .desktop-menu-drawer.is-open .desktop-menu-drawer__panel {
+    transform: translateX(0);
+  }
+
+  .desktop-menu-drawer__close {
+    align-self: flex-end;
+    margin-bottom: var(--margin-lg);
+    color: var(--color-foreground);
+  }
+
+  .desktop-menu-drawer__close .svg-wrapper {
+    display: flex;
+    width: var(--button-size);
+    height: var(--button-size);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-menu-drawer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .desktop-menu-drawer__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .desktop-menu-drawer__link {
+    display: block;
+    padding-block: var(--padding-md);
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--color-foreground);
+    transition: opacity var(--animation-speed) var(--animation-easing);
+  }
+
+  .desktop-menu-drawer__link:hover {
+    opacity: 0.65;
+  }
+
+  .desktop-menu-drawer__sublist {
+    list-style: none;
+    padding: 0 0 var(--padding-sm) var(--padding-md);
+    margin: 0;
+  }
+
+  .desktop-menu-drawer__sublink {
+    display: block;
+    padding-block: var(--padding-xs);
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: var(--color-foreground);
+    opacity: 0.75;
+    transition: opacity var(--animation-speed) var(--animation-easing);
+  }
+
+  .desktop-menu-drawer__sublink:hover {
+    opacity: 1;
   }
 
   .account-popover {
