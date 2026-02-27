@@ -11,8 +11,9 @@
   "current": {
     "logo": "shopify://shop_images/TBV_Logo_WHT_ICON_b0fa324b-22ae-40c1-bc64-3f988e31e70d.png",
     "logo_inverse": "shopify://shop_images/TBV_Logo_BLK_ICON_6d276158-a919-40a3-aafd-cfa5b52ca038.png",
-    "logo_height": 36,
-    "logo_height_mobile": 28,
+    "logo_height": 50,
+    "logo_height_mobile": 40,
+    "favicon": "shopify://shop_images/TBV_Logo_BLK_ICON_6d276158-a919-40a3-aafd-cfa5b52ca038.png",
     "type_body_font": "roboto_n4",
     "type_subheading_font": "roboto_mono_n4",
     "type_heading_font": "inter_n7",
