@@ -151,8 +151,9 @@
       ],
       "name": "t:names.hero",
       "settings": {
-        "media_type_1": "image",
+        "media_type_1": "video",
         "image_1": "shopify://shop_images/T_K_Project_Banner_V1.webp",
+        "video_1": "shopify://files/videos/Multiple Gear Video (1).mp4",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -437,7 +438,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h6>SHOPIFY SITE OVERHAUL</h6>",
+                "text": "<h6><strong>SHOPIFY SITE OVERHAUL</strong></h6>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -463,7 +464,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h6>EMAIL CAMPAIGNS</h6>",
+                "text": "<h6><strong>EMAIL CAMPAIGNS</strong></h6>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
