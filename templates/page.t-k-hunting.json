@@ -1502,15 +1502,41 @@
           },
           "blocks": {}
         },
+        "video_8t6tzT": {
+          "type": "video",
+          "name": "t:names.video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/T&K Email Design 3.mp4",
+            "video_url": "",
+            "video_autoplay": true,
+            "video_loop": true,
+            "disable_controls": true,
+            "alt": "",
+            "custom_width": 100,
+            "custom_width_mobile": 100,
+            "aspect_ratio": "auto",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "video_iMwQa3": {
           "type": "video",
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
+            "video": "shopify://files/videos/T&K Email Design 4.mp4",
             "video_url": "",
-            "video_autoplay": false,
+            "video_autoplay": true,
             "video_loop": true,
-            "disable_controls": false,
+            "disable_controls": true,
             "alt": "",
             "custom_width": 100,
             "custom_width_mobile": 100,
@@ -1531,34 +1557,11 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
+            "video": "shopify://files/videos/T&K Email Preview 2.mp4",
             "video_url": "",
-            "video_autoplay": false,
+            "video_autoplay": true,
             "video_loop": true,
-            "disable_controls": false,
-            "alt": "",
-            "custom_width": 100,
-            "custom_width_mobile": 100,
-            "aspect_ratio": "auto",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "video_8t6tzT": {
-          "type": "video",
-          "name": "t:names.video",
-          "settings": {
-            "source": "uploaded",
-            "video_url": "",
-            "video_autoplay": false,
-            "video_loop": true,
-            "disable_controls": false,
+            "disable_controls": true,
             "alt": "",
             "custom_width": 100,
             "custom_width_mobile": 100,
@@ -1577,9 +1580,9 @@
       },
       "block_order": [
         "video_F6C7Ba",
+        "video_8t6tzT",
         "video_iMwQa3",
-        "video_pgpFkw",
-        "video_8t6tzT"
+        "video_pgpFkw"
       ],
       "name": "t:names.custom_section",
       "settings": {
