@@ -1482,9 +1482,11 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
-            "video_autoplay": false,
+            "video": "shopify://files/videos/T&K Email 1 Video.mp4",
+            "video_url": "",
+            "video_autoplay": true,
             "video_loop": true,
-            "disable_controls": false,
+            "disable_controls": true,
             "alt": "",
             "custom_width": 100,
             "custom_width_mobile": 100,
@@ -1505,6 +1507,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "video_autoplay": false,
             "video_loop": true,
             "disable_controls": false,
@@ -1528,6 +1531,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "video_autoplay": false,
             "video_loop": true,
             "disable_controls": false,
@@ -1551,6 +1555,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
+            "video_url": "",
             "video_autoplay": false,
             "video_loop": true,
             "disable_controls": false,
