@@ -901,7 +901,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 15,
+            "gap": 10,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -1043,12 +1043,28 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "button_hUGDGL": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "VIEW PROJECT",
+                "link": "shopify://pages/kapture-gear",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "group_AMQr8C",
             "product_description_Xj7MqR",
-            "text_Y7ky9h"
+            "text_Y7ky9h",
+            "button_hUGDGL"
           ]
         },
         "group_fiJGE8": {
@@ -1087,8 +1103,8 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 15,
-            "padding-inline-start": 15,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
             "padding-inline-end": 0
           },
           "blocks": {
