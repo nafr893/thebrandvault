@@ -750,8 +750,8 @@
               "type": "text",
               "settings": {
                 "text": "<p>We developed a custom in house solution for T&K allowing their customers to build their own bino harness system. T&K Staff can easily edit and add new products to the system builder, making it simple, effective and scalable.</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
+                "width": "100%",
+                "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
