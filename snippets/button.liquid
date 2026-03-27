@@ -30,6 +30,9 @@
   {{ block.shopify_attributes }}
 >
   {{ block_settings.label }}
+  {%- if block_settings.style_class == 'link' -%}
+    {{- 'icon-external.svg' | inline_asset_content -}}
+  {%- endif -%}
 </a>
 
 {% stylesheet %}
@@ -41,5 +44,11 @@
       color: var(--color-primary-hover);
       text-decoration-color: transparent;
     }
+  }
+
+  .link svg {
+    display: inline-block;
+    position: relative;
+    top: var(--margin-2xs);
   }
 {% endstylesheet %}
