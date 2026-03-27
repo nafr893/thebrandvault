@@ -899,7 +899,7 @@
             "text_WhYLJP": {
               "type": "text",
               "settings": {
-                "text": "<p>We developed a custom in house solution for T&K allowing their customers to build their own bino harness system. T&K Staff can easily edit and add new products to the system builder, making it simple, effective and scalable.</p>",
+                "text": "<p>We created a multi tabbed navigation, clearly sorting the 3 main levels of T&K's site. Customers can easily shop by category, by pursuit, or explore T&K's brand. </p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -924,8 +924,8 @@
             "button_HtbaEe": {
               "type": "button",
               "settings": {
-                "label": "EXPLORE",
-                "link": "https://tandkhunting.com/pages/build-your-bino-harness",
+                "label": "Visit Site",
+                "link": "https://tandkhunting.com/",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
