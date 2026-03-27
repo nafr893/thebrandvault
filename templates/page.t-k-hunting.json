@@ -658,16 +658,18 @@
     "section_XmNcrY": {
       "type": "section",
       "blocks": {
-        "image_8zPV3j": {
-          "type": "image",
+        "video_iaU6na": {
+          "type": "video",
+          "name": "t:names.video",
           "settings": {
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
+            "source": "uploaded",
+            "video": "shopify://files/videos/Bino Harness Builder Video.mp4",
+            "video_autoplay": true,
+            "video_loop": true,
+            "alt": "",
             "custom_width": 100,
-            "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "height": "fit",
+            "aspect_ratio": "auto",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -722,7 +724,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Our signature product</h2>",
+                "text": "<h2>Custom Bino Harness Builder</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -747,7 +749,7 @@
             "text_pH9KxB": {
               "type": "text",
               "settings": {
-                "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
+                "text": "<p>We developed a custom in house solution for T&K allowing their customers to build their own bino harness system. T&K Staff can easily edit and add new products to the system builder, making it simple, effective and scalable.</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -772,8 +774,8 @@
             "button_YqVFrR": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
+                "label": "EXPLORE",
+                "link": "https://tandkhunting.com/pages/build-your-bino-harness",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -792,7 +794,7 @@
         }
       },
       "block_order": [
-        "image_8zPV3j",
+        "video_iaU6na",
         "group_WnpMay"
       ],
       "name": "t:names.image_with_text",
