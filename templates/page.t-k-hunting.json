@@ -664,8 +664,10 @@
           "settings": {
             "source": "uploaded",
             "video": "shopify://files/videos/Bino Harness Builder Video.mp4",
+            "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
+            "disable_controls": true,
             "alt": "",
             "custom_width": 100,
             "custom_width_mobile": 100,
@@ -946,8 +948,10 @@
           "settings": {
             "source": "uploaded",
             "video": "shopify://files/videos/Custom Navigation Unit Levels.mp4",
+            "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
+            "disable_controls": true,
             "alt": "",
             "custom_width": 100,
             "custom_width_mobile": 100,
