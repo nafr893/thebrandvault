@@ -229,7 +229,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h4>SERVICES</h4>",
+                "text": "<h4>SERVICES PROVIDED</h4>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -524,7 +524,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 25,
+        "gap": 50,
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
