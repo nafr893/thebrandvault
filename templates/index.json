@@ -1511,29 +1511,18 @@
                   },
                   "blocks": {}
                 },
-                "text_jTfaDN": {
-                  "type": "text",
-                  "name": "t:names.text",
+                "button_zArDX9": {
+                  "type": "button",
+                  "name": "t:names.button",
                   "settings": {
-                    "text": "<p>Pieces that only get better with time and wear </p>",
+                    "label": "VIEW PROJECT",
+                    "link": "shopify://pages/onward-energy",
+                    "open_in_new_tab": false,
+                    "style_class": "link",
                     "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
                   },
                   "blocks": {}
                 }
@@ -1541,7 +1530,7 @@
               "block_order": [
                 "image_eqdjrC",
                 "text_8pyWNC",
-                "text_jTfaDN"
+                "button_zArDX9"
               ]
             },
             "card_ia9n4K": {
@@ -1621,29 +1610,18 @@
                   },
                   "blocks": {}
                 },
-                "text_Jnd6VY": {
-                  "type": "text",
-                  "name": "t:names.text",
+                "button_8Tw6pT": {
+                  "type": "button",
+                  "name": "t:names.button",
                   "settings": {
-                    "text": "<p>Authentic materials, no compromises </p>",
+                    "label": "VIEW PROJECT",
+                    "link": "shopify://pages/raised-hunting",
+                    "open_in_new_tab": false,
+                    "style_class": "link",
                     "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
                   },
                   "blocks": {}
                 }
@@ -1651,7 +1629,7 @@
               "block_order": [
                 "image_rRBY7T",
                 "text_Gte6Mr",
-                "text_Jnd6VY"
+                "button_8Tw6pT"
               ]
             },
             "card_rYGe3x": {
@@ -1731,29 +1709,18 @@
                   },
                   "blocks": {}
                 },
-                "text_7i3gLg": {
-                  "type": "text",
-                  "name": "t:names.text",
+                "button_496DVR": {
+                  "type": "button",
+                  "name": "t:names.button",
                   "settings": {
-                    "text": "<p>Authentic materials, no compromises </p>",
+                    "label": "VIEW PROJECT",
+                    "link": "shopify://pages/raised-hunting",
+                    "open_in_new_tab": false,
+                    "style_class": "link",
                     "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
                   },
                   "blocks": {}
                 }
@@ -1761,7 +1728,7 @@
               "block_order": [
                 "image_Xedqhi",
                 "text_3bftyQ",
-                "text_7i3gLg"
+                "button_496DVR"
               ]
             }
           },
