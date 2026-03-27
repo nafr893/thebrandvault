@@ -158,8 +158,8 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 15,
-            "padding-inline-start": 15,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
             "padding-inline-end": 0
           },
           "blocks": {
@@ -223,7 +223,7 @@
                   "type": "custom-label",
                   "name": "Custom label",
                   "settings": {
-                    "text": "EMAIL",
+                    "text": "EMAIL CAMPAIGNS",
                     "link": "",
                     "text_color": "#ffffff",
                     "bg_color": "#ffffff",
@@ -352,8 +352,8 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 15,
-            "padding-inline-start": 15,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
             "padding-inline-end": 0
           },
           "blocks": {
@@ -401,7 +401,23 @@
                   "type": "custom-label",
                   "name": "Custom label",
                   "settings": {
-                    "text": "EMAIL",
+                    "text": "EMAIL CAMPAIGNS",
+                    "link": "",
+                    "text_color": "#ffffff",
+                    "bg_color": "#ffffff",
+                    "bg_opacity": 15,
+                    "hover_bg_color": "#ffffff",
+                    "hover_bg_opacity": 20,
+                    "border_color": "#ffffff",
+                    "border_opacity": 100
+                  },
+                  "blocks": {}
+                },
+                "custom_label_pBDxLz": {
+                  "type": "custom-label",
+                  "name": "Custom label",
+                  "settings": {
+                    "text": "EMAIL FLOWS",
                     "link": "",
                     "text_color": "#ffffff",
                     "bg_color": "#ffffff",
@@ -415,7 +431,8 @@
                 }
               },
               "block_order": [
-                "custom_label_EkTGbB"
+                "custom_label_EkTGbB",
+                "custom_label_pBDxLz"
               ]
             },
             "product_description_XVfgWJ": {
@@ -469,12 +486,28 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "button_6aCeBF": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "VIEW PROJECT",
+                "link": "shopify://pages/onward-energy",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "group_VBB9dN",
             "product_description_XVfgWJ",
-            "text_KkgBz9"
+            "text_KkgBz9",
+            "button_6aCeBF"
           ]
         }
       },
@@ -550,8 +583,8 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 15,
-            "padding-inline-start": 15,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
             "padding-inline-end": 0
           },
           "blocks": {
@@ -615,7 +648,7 @@
                   "type": "custom-label",
                   "name": "Custom label",
                   "settings": {
-                    "text": "EMAIL",
+                    "text": "EMAIL FLOWS",
                     "link": "",
                     "text_color": "#ffffff",
                     "bg_color": "#ffffff",
@@ -684,12 +717,28 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "button_RnzPnG": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "VIEW PROJECT",
+                "link": "shopify://pages/ridge-belts",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "group_HGbyCM",
             "product_description_8N6jac",
-            "text_Q8cgjW"
+            "text_Q8cgjW",
+            "button_RnzPnG"
           ]
         },
         "group_jwP3fP": {
@@ -728,8 +777,8 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 15,
-            "padding-inline-start": 15,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
             "padding-inline-end": 0
           },
           "blocks": {
@@ -777,7 +826,7 @@
                   "type": "custom-label",
                   "name": "Custom label",
                   "settings": {
-                    "text": "EMAIL",
+                    "text": "EMAIL CAMPAIGNS",
                     "link": "",
                     "text_color": "#ffffff",
                     "bg_color": "#ffffff",
@@ -845,12 +894,28 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "button_HEUJxX": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "VIEW PROJECT",
+                "link": "shopify://pages/raised-hunting",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "group_kUQGWE",
             "product_description_pFiF6Y",
-            "text_bFKRdj"
+            "text_bFKRdj",
+            "button_HEUJxX"
           ]
         }
       },
