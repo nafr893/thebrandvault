@@ -1,10 +1,16 @@
 
 
+{% assign sec_settings = section.settings %}
+{% assign sec_vis_class = '' %}
+{% if sec_settings.visibility == 'desktop' %}{% assign sec_vis_class = 'hide-on-mobile' %}{% elsif sec_settings.visibility == 'mobile' %}{% assign sec_vis_class = 'hide-on-desktop' %}{% endif %}
+
 {% capture children %}
   {% content_for 'blocks' %}
 {% endcapture %}
 
+<div class="visibility-wrapper {{ sec_vis_class }}">
 {% render 'section', section: section, children: children %}
+</div>
 
 {% schema %}
 {
@@ -415,6 +421,22 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    }
+    ,
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Visible on",
+      "options": [
+        { "value": "both", "label": "All devices" },
+        { "value": "mobile", "label": "Mobile only" },
+        { "value": "desktop", "label": "Desktop only" }
+      ],
+      "default": "both"
     }
   ],
   "presets": [

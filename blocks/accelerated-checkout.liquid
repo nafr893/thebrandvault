@@ -1,5 +1,8 @@
 
 
+{% assign block_settings = block.settings %}
+{% assign vis_class = '' %}
+{% if block_settings.visibility == 'desktop' %}{% assign vis_class = 'hide-on-mobile' %}{% elsif block_settings.visibility == 'mobile' %}{% assign vis_class = 'hide-on-desktop' %}{% endif %}
 {%- doc -%}
   This block is used to display the accelerated checkout button.
   Intended for product-form.liquid block.
@@ -25,6 +28,7 @@
 {% endcapture %}
 
 {% if accelerated_checkout_button != blank %}
+  <div class="visibility-wrapper {{ vis_class }}">
   <div
     class="accelerated-checkout-block"
     ref="acceleratedCheckoutButtonContainer"
@@ -37,6 +41,7 @@
     {% endunless %}
   >
     {{ accelerated_checkout_button }}
+  </div>
   </div>
 {% endif %}
 
@@ -65,6 +70,23 @@
 {% schema %}
 {
   "name": "t:names.accelerated_checkout",
-  "tag": null
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Visible on",
+      "options": [
+        { "value": "both", "label": "All devices" },
+        { "value": "mobile", "label": "Mobile only" },
+        { "value": "desktop", "label": "Desktop only" }
+      ],
+      "default": "both"
+    }
+  ]
 }
 {% endschema %}

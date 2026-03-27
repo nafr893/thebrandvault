@@ -1,5 +1,7 @@
 
-
+{% assign block_settings = block.settings %}
+{% assign vis_class = '' %}
+{% if block_settings.visibility == 'desktop' %}{% assign vis_class = 'hide-on-mobile' %}{% elsif block_settings.visibility == 'mobile' %}{% assign vis_class = 'hide-on-desktop' %}{% endif %}
 {% liquid
   assign product_resource = closest.product
   if request.visual_preview_mode and product_resource == blank
@@ -7,9 +9,11 @@
   endif
 -%}
 
+<div class="visibility-wrapper {{ vis_class }}">
 {% unless product_resource == blank %}
   {% render 'variant-main-picker', product_resource: product_resource %}
 {% endunless %}
+</div>
 
 {% schema %}
 {
@@ -95,6 +99,22 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    }
+    ,
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Visible on",
+      "options": [
+        { "value": "both", "label": "All devices" },
+        { "value": "mobile", "label": "Mobile only" },
+        { "value": "desktop", "label": "Desktop only" }
+      ],
+      "default": "both"
     }
   ],
   "presets": [

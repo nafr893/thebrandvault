@@ -1,5 +1,8 @@
 
 {%- assign block_settings = block.settings -%}
+{% assign vis_class = '' %}
+{% if block_settings.visibility == 'desktop' %}{% assign vis_class = 'hide-on-mobile' %}{% elsif block_settings.visibility == 'mobile' %}{% assign vis_class = 'hide-on-desktop' %}{% endif %}
+<div class="visibility-wrapper {{ vis_class }}">
 <button
   type="submit"
   class="button submit-button size-style {{ block_settings.style_class }}"
@@ -8,6 +11,7 @@
 >
   {{ block_settings.label }}
 </button>
+</div>
 
 {% stylesheet %}
   .submit-button {
@@ -99,6 +103,22 @@
       "unit": "%",
       "default": 100,
       "visible_if": "{{ block.settings.width_mobile == 'custom' }}"
+    }
+    ,
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Visible on",
+      "options": [
+        { "value": "both", "label": "All devices" },
+        { "value": "mobile", "label": "Mobile only" },
+        { "value": "desktop", "label": "Desktop only" }
+      ],
+      "default": "both"
     }
   ],
   "presets": []

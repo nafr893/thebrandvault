@@ -1,6 +1,9 @@
 
 
 {% assign block_settings = block.settings %}
+{% assign vis_class = '' %}
+{% if block_settings.visibility == 'desktop' %}{% assign vis_class = 'hide-on-mobile' %}{% elsif block_settings.visibility == 'mobile' %}{% assign vis_class = 'hide-on-desktop' %}{% endif %}
+<div class="visibility-wrapper {{ vis_class }}">
 <div
   class="accordion accordion--{{ block.id }} accordion--{{ block_settings.icon }} border-style spacing-style{% if block_settings.inherit_color_scheme == false %} color-{{ block_settings.color_scheme }}{% endif %}{% if block_settings.dividers %} accordion--dividers{% endif %}"
   style="
@@ -16,6 +19,7 @@
   {{ block.shopify_attributes }}
 >
   {% content_for 'blocks' %}
+</div>
 </div>
 
 {% stylesheet %}
@@ -249,6 +253,21 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Visible on",
+      "options": [
+        { "value": "both", "label": "All devices" },
+        { "value": "mobile", "label": "Mobile only" },
+        { "value": "desktop", "label": "Desktop only" }
+      ],
+      "default": "both"
     }
   ],
   "presets": [

@@ -19,6 +19,10 @@
   fetchpriority="low"
 ></script>
 
+{% assign block_settings = block.settings %}
+{% assign vis_class = '' %}
+{% if block_settings.visibility == 'desktop' %}{% assign vis_class = 'hide-on-mobile' %}{% elsif block_settings.visibility == 'mobile' %}{% assign vis_class = 'hide-on-desktop' %}{% endif %}
+
 {%- liquid
   assign block_settings = block.settings
   assign products_count = results_size
@@ -72,6 +76,7 @@
   endif
 -%}
 
+<div class="visibility-wrapper {{ vis_class }}">
 {% if block_settings.enable_filtering or block_settings.enable_sorting or block_settings.enable_grid_density %}
   {% if block_settings.filter_style == 'vertical' %}
     {% # These elements are always rendered in the horizontal bar that's why we apply the .facets--horizontal class %}
@@ -503,6 +508,7 @@
     </dialog>
   </dialog-component>
 {% endif %}
+</div>
 
 {% stylesheet %}
   .facets-block-wrapper {
@@ -1479,6 +1485,22 @@
       "unit": "px",
       "default": 20,
       "visible_if": "{{ block.settings.filter_style == 'vertical' }}"
+    }
+    ,
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Visible on",
+      "options": [
+        { "value": "both", "label": "All devices" },
+        { "value": "mobile", "label": "Mobile only" },
+        { "value": "desktop", "label": "Desktop only" }
+      ],
+      "default": "both"
     }
   ]
 }

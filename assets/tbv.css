@@ -42,3 +42,18 @@ header-menu.header-menu {
  summary.header__icon.header__icon--menu.header__icon--summary {
   display: none !important; 
  }
+.visibility-wrapper {
+  display: contents;
+}
+
+@media screen and (max-width: 749px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}

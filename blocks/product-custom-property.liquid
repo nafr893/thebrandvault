@@ -1,5 +1,8 @@
 
 
+{% assign block_settings = block.settings %}
+{% assign vis_class = '' %}
+{% if block_settings.visibility == 'desktop' %}{% assign vis_class = 'hide-on-mobile' %}{% elsif block_settings.visibility == 'mobile' %}{% assign vis_class = 'hide-on-desktop' %}{% endif %}
 {%- liquid
   assign block_settings = block.settings
   assign property_name = 'properties[custom-property]' | replace: 'custom-property', block_settings.property_key
@@ -39,6 +42,7 @@
   </label>
 {% endcapture %}
 
+<div class="visibility-wrapper {{ vis_class }}">
 <div
   class="spacing-style"
   style="{% render 'spacing-style', settings: block_settings %}"
@@ -111,6 +115,7 @@
       </div>
     {% endif %}
   </div>
+</div>
 </div>
 
 {% stylesheet %}
@@ -334,6 +339,22 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    }
+    ,
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Visible on",
+      "options": [
+        { "value": "both", "label": "All devices" },
+        { "value": "mobile", "label": "Mobile only" },
+        { "value": "desktop", "label": "Desktop only" }
+      ],
+      "default": "both"
     }
   ],
   "presets": [

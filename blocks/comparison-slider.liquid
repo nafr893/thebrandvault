@@ -1,5 +1,8 @@
 
 
+{% assign block_settings = block.settings %}
+{% assign vis_class = '' %}
+{% if block_settings.visibility == 'desktop' %}{% assign vis_class = 'hide-on-mobile' %}{% elsif block_settings.visibility == 'mobile' %}{% assign vis_class = 'hide-on-desktop' %}{% endif %}
 <script
   src="{{ 'comparison-slider.js' | asset_url }}"
   type="module"
@@ -27,6 +30,7 @@
   endif
 %}
 
+<div class="visibility-wrapper {{ vis_class }}">
 <comparison-slider-component
   class="comparison-slider comparison-slider--{{ block.settings.slider_style }} spacing-style size-style border-style{% if block.settings.inherit_color_scheme == false %} color-{{ block.settings.color_scheme }}{% endif %}"
   style="--ratio: {{ ratio }}; --text-background-color: {{ block.settings.text_background_color }}; --text-corner-radius: {{ block.settings.text_corner_radius }}px; {% render 'spacing-style', settings: block.settings %} {% render 'size-style', settings: block.settings %} {% render 'border-override', settings: block.settings %}"
@@ -132,6 +136,7 @@
     </div>
   </div>
 </comparison-slider-component>
+</div>
 
 {% stylesheet %}
   comparison-slider-component {
@@ -756,6 +761,22 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    }
+    ,
+    {
+      "type": "header",
+      "content": "Visibility"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Visible on",
+      "options": [
+        { "value": "both", "label": "All devices" },
+        { "value": "mobile", "label": "Mobile only" },
+        { "value": "desktop", "label": "Desktop only" }
+      ],
+      "default": "both"
     }
   ],
   "presets": [
