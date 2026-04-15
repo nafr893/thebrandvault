@@ -617,7 +617,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>WE ARE SHOPIFY AND KLAVIYO EXPERTS</h2>",
+            "text": "<h2>WE ARE SHOPIFY AND KLAVIYO EXPERTS<br/>ROOTED IN THE OUTDOOR INDUSTRY</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -644,7 +644,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>That's our mission. We exist to show customers your products in the way they deserve to  </p>",
+            "text": "<p>We exist to sh</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
