@@ -937,6 +937,7 @@
         "video_iaU6na",
         "group_WnpMay"
       ],
+      "disabled": true,
       "name": "Custom Bino Harness",
       "settings": {
         "content_direction": "row",
@@ -1525,7 +1526,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
-            "video": "shopify://files/videos/T&K Email 1 Video.mp4",
+            "video": "shopify://files/videos/ONWARD Email V1.mp4",
             "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
@@ -1551,7 +1552,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
-            "video": "shopify://files/videos/T&K Email Design 3.mp4",
+            "video": "shopify://files/videos/ONWARD Email Campaign 4.mp4",
             "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
@@ -1577,7 +1578,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
-            "video": "shopify://files/videos/T&K Email Design 4.mp4",
+            "video": "shopify://files/videos/ONWARD Energy Email 7.mp4",
             "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
@@ -1603,7 +1604,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
-            "video": "shopify://files/videos/T&K Email Preview 2.mp4",
+            "video": "shopify://files/videos/ONWARD Email Campaign 2.mp4",
             "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
