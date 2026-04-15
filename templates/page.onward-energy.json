@@ -334,7 +334,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>T&K handmakes some of the best hunting gear in the industry. Their products are packed with features and built from the highest-quality materials to perform in the field. The challenge was presenting those products online without overwhelming customers with information.</p>",
+                    "text": "<p>ONWARD makes performance supplements for energy, hydration, and mental focus. Prior to working with us, they had an active customer base, however their customers weren't being engaged on a regular basis. <br/><br/>Our approach was to launch several email campaigns on a consistent basis to engage their existing customers. This resulted in attributed revenue increasing by 217.8%</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -756,6 +756,7 @@
         "text_Xa76kM",
         "button_fLJkrx"
       ],
+      "disabled": true,
       "name": "Mobile Display",
       "settings": {
         "media_type_1": "image",
