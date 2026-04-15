@@ -643,6 +643,7 @@
         "text_Lk6ffL",
         "button_Aw43bJ"
       ],
+      "disabled": true,
       "name": "Desktop Display",
       "settings": {
         "media_type_1": "image",
@@ -1118,6 +1119,7 @@
         "group_JgFFjU",
         "video_VYz3UX"
       ],
+      "disabled": true,
       "name": "Custom Nav",
       "settings": {
         "content_direction": "row",
@@ -1491,6 +1493,7 @@
         "group_zYg9Em",
         "button_kxeif4"
       ],
+      "disabled": true,
       "name": "The Challenge",
       "settings": {
         "content_direction": "row",
@@ -2174,7 +2177,7 @@
         "color_scheme": "scheme-2",
         "background_media": "image",
         "video_position": "cover",
-        "background_image": "shopify://shop_images/Contact_Banner_v1.webp",
+        "background_image": "shopify://shop_images/ONWARD_Project_Banner_v3.webp",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
