@@ -50,7 +50,8 @@
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-inline-end": 0,
+            "visibility": "both"
           },
           "blocks": {
             "text_LWt8Pz": {
@@ -74,7 +75,8 @@
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-end": 0,
+                "visibility": "both"
               },
               "blocks": {}
             },
@@ -99,7 +101,8 @@
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-inline-end": 0,
+                "visibility": "both"
               },
               "blocks": {}
             }
@@ -115,12 +118,12 @@
             "width": "fill",
             "custom_width": 100,
             "inherit_color_scheme": true,
+            "color_scheme": "",
             "heading": "",
             "heading_preset": "h3",
-            "color_scheme": "",
             "border_style": "all",
             "border_width": 1,
-            "border_radius": 100,
+            "border_radius": 0,
             "input_type_preset": "paragraph",
             "style_class": "button-unstyled",
             "display_type": "arrow",
@@ -130,7 +133,8 @@
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-inline-end": 0,
+            "visibility": "both"
           },
           "blocks": {}
         }
@@ -143,7 +147,7 @@
       "settings": {
         "section_width": "page-width",
         "gap": 20,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "padding-block-start": 30,
         "padding-block-end": 30
       }
@@ -156,7 +160,8 @@
           "settings": {
             "show_powered_by": true,
             "font_size": "0.75rem",
-            "case": "none"
+            "case": "none",
+            "visibility": "both"
           },
           "blocks": {}
         },
@@ -164,7 +169,8 @@
           "type": "footer-policy-list",
           "settings": {
             "font_size": "0.75rem",
-            "case": "none"
+            "case": "none",
+            "visibility": "both"
           },
           "blocks": {}
         },
@@ -183,7 +189,8 @@
             "pinterest_url": "",
             "tumblr_url": "",
             "vimeo_url": "",
-            "custom_url": ""
+            "custom_url": "",
+            "visibility": "both"
           },
           "blocks": {}
         }
@@ -198,7 +205,7 @@
         "section_width": "page-width",
         "gap": 24,
         "divider_thickness": 0,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding-block-start": 20,
         "padding-block-end": 48
       }
