@@ -265,7 +265,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>QUALITY PRODUCTS WITH HIDDEN POTENTIAL</h2>",
+                "text": "<h2>CREATING A CUSTOM SYSTEM BUILDER</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -333,7 +333,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>T&K handmakes some of the best hunting gear in the industry. Their products are packed with features and built from the highest-quality materials to perform in the field. The challenge was presenting those products online without overwhelming customers with information.</p>",
+                    "text": "<p>Kapture Gear creates custom digiscoping setups for a variety of outdoor enthusiasts. Their setup allows hunters to capture photos and videos through their binoculars or spotting scopes using just their cell phone.<br/><br/>However, when building a setup through their website, customers had to manually create their own system by referencing sizing charts and other information.<br/><br/>We simplified this by creating a system builder that automatically directs users to select products based on their phone and scope models.</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -452,7 +452,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h6><strong>SHOPIFY SITE OVERHAUL</strong></h6>",
+                "text": "<h6><strong>SHOPIFY SITE CUSTOMIZATION</strong></h6>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -478,6 +478,7 @@
             "text_8zUey9": {
               "type": "text",
               "name": "t:names.heading",
+              "disabled": true,
               "settings": {
                 "text": "<h6><strong>EMAIL CAMPAIGNS</strong></h6>",
                 "width": "fit-content",
