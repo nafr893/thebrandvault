@@ -586,11 +586,38 @@
     "section_yVCJA9": {
       "type": "section",
       "blocks": {
+        "text_RdA336": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h6><strong>WHO WE ARE</strong></h6>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "visibility": "both"
+          },
+          "blocks": {}
+        },
         "text_cJMHb9": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>WE CONVERT VISITORS INTO CUSTOMERS</h2>",
+            "text": "<h2>WE ARE SHOPIFY AND KLAVIYO EXPERTS</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -658,6 +685,7 @@
         }
       },
       "block_order": [
+        "text_RdA336",
         "text_cJMHb9",
         "text_fdCKrQ",
         "button_etARH6"
