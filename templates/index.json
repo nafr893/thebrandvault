@@ -643,6 +643,7 @@
         "text_fdCKrQ": {
           "type": "text",
           "name": "t:names.text",
+          "disabled": true,
           "settings": {
             "text": "<p>We exist to convert visitors into loyal returning customers. </p>",
             "width": "fit-content",
@@ -671,7 +672,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "VIEW WORK",
+            "label": "LEARN MORE",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button",
