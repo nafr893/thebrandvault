@@ -1694,7 +1694,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "VIEW PROJECT",
-                    "link": "shopify://pages/raised-hunting",
+                    "link": "",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
