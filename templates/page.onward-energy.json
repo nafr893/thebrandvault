@@ -92,6 +92,7 @@
         "button_KqpqzT": {
           "type": "button",
           "name": "t:names.button",
+          "disabled": true,
           "settings": {
             "label": "VISIT SITE",
             "link": "https://tandkhuntinggear.com",
@@ -158,8 +159,8 @@
       ],
       "name": "t:names.hero",
       "settings": {
-        "media_type_1": "video",
-        "image_1": "shopify://shop_images/T_K_Project_Banner_V1.webp",
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/Photo_Apr_14_2025_5_48_45_PM.webp",
         "video_1": "shopify://files/videos/Multiple Gear Video (1).mp4",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
@@ -452,7 +453,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h6><strong>SHOPIFY SITE OVERHAUL</strong></h6>",
+                "text": "<h6><strong>KLAVIYO AUTOMATIONS</strong></h6>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
