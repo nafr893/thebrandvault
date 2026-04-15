@@ -42,13 +42,17 @@ header-menu.header-menu {
  summary.header__icon.header__icon--menu.header__icon--summary {
   display: none !important; 
  }
-/* visibility-wrapper: intentionally no display override.
-   display:contents was removed because it breaks grid-column inheritance
-   in CSS grid contexts (grid-column set on the wrapper is ignored, causing
-   children to auto-place into column 1 instead of the intended column). */
 .visibility-wrapper {
-  min-width: 0;
-  min-height: 0;
+  display: contents;
+}
+
+/* Fix: display:contents causes grid-column to be ignored on the wrapper,
+   so children of the wrapper auto-place into column 1 (the narrow margin column)
+   instead of column 2 (the page-width content column).
+   These rules explicitly place the affected elements in the correct column. */
+.section-carousel .group-block,
+.section .visibility-wrapper > .group-block {
+  grid-column: 2;
 }
 
 @media screen and (max-width: 749px) {
