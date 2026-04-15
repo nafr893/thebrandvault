@@ -1744,7 +1744,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Raised_Hunting_Cover_Pic_2.3.webp",
+                    "image": "shopify://shop_images/Kapture_Gear_Hero_V1.webp",
                     "link": "",
                     "image_ratio": "square",
                     "width": "fill",
@@ -1768,7 +1768,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h4>RAISED HUNTING</h4>",
+                    "text": "<h4>KAPTURE GEAR</h4>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1796,7 +1796,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "VIEW PROJECT",
-                    "link": "shopify://pages/raised-hunting",
+                    "link": "shopify://pages/kapture-gear",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
