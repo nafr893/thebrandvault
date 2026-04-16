@@ -673,7 +673,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "LEARN MORE",
-            "link": "shopify://collections/all",
+            "link": "shopify://pages/services",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
