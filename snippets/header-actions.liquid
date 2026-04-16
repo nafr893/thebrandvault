@@ -286,42 +286,44 @@
           {%- assign grp_heading_key = 'drawer_group_' | append: i | append: '_heading' -%}
           {%- assign grp_link_key    = 'drawer_group_' | append: i | append: '_link' -%}
           {%- assign grp_label_key   = 'drawer_group_' | append: i | append: '_link_label' -%}
-          <div class="desktop-menu-drawer__group">
-            <div class="desktop-menu-drawer__group-image-wrap">
+          {%- assign grp_has_content = false -%}
+          {%- if section.settings[grp_image_key] != blank or section.settings[grp_badge_key] != blank or section.settings[grp_heading_key] != blank or section.settings[grp_link_key] != blank -%}
+            {%- assign grp_has_content = true -%}
+          {%- endif -%}
+          {%- if grp_has_content -%}
+            <div class="desktop-menu-drawer__group">
               {%- if section.settings[grp_image_key] != blank -%}
-                {{
-                  section.settings[grp_image_key]
-                  | image_url: width: 400
-                  | image_tag:
-                    class: 'desktop-menu-drawer__group-image',
-                    widths: '200, 400',
-                    sizes: '(min-width: 750px) 160px, 45vw'
-                }}
-              {%- else -%}
-                <div class="desktop-menu-drawer__group-image-placeholder">
-                  {{ 'detailed-apparel-1' | placeholder_svg_tag }}
+                <div class="desktop-menu-drawer__group-image-wrap">
+                  {{
+                    section.settings[grp_image_key]
+                    | image_url: width: 400
+                    | image_tag:
+                      class: 'desktop-menu-drawer__group-image',
+                      widths: '200, 400',
+                      sizes: '(min-width: 750px) 320px, 90vw'
+                  }}
+                  {%- if section.settings[grp_badge_key] != blank -%}
+                    <span class="desktop-menu-drawer__group-badge">
+                      {{- section.settings[grp_badge_key] -}}
+                    </span>
+                  {%- endif -%}
                 </div>
               {%- endif -%}
-              {%- if section.settings[grp_badge_key] != blank -%}
-                <span class="desktop-menu-drawer__group-badge">
-                  {{- section.settings[grp_badge_key] -}}
-                </span>
+              {%- if section.settings[grp_heading_key] != blank -%}
+                <p class="desktop-menu-drawer__group-heading">
+                  {{- section.settings[grp_heading_key] -}}
+                </p>
+              {%- endif -%}
+              {%- if section.settings[grp_link_key] != blank -%}
+                <a href="{{ section.settings[grp_link_key] }}" class="desktop-menu-drawer__group-link">
+                  {{- section.settings[grp_label_key] | default: 'View project' -}}
+                  <span class="svg-wrapper" aria-hidden="true">
+                    {{- 'icon-external.svg' | inline_asset_content -}}
+                  </span>
+                </a>
               {%- endif -%}
             </div>
-            {%- if section.settings[grp_heading_key] != blank -%}
-              <p class="desktop-menu-drawer__group-heading">
-                {{- section.settings[grp_heading_key] -}}
-              </p>
-            {%- endif -%}
-            {%- if section.settings[grp_link_key] != blank -%}
-              <a href="{{ section.settings[grp_link_key] }}" class="desktop-menu-drawer__group-link">
-                {{- section.settings[grp_label_key] | default: 'View project' -}}
-                <span class="svg-wrapper" aria-hidden="true">
-                  {{- 'icon-external.svg' | inline_asset_content -}}
-                </span>
-              </a>
-            {%- endif -%}
-          </div>
+          {%- endif -%}
         {%- endfor -%}
       </div>
     </div>
@@ -485,11 +487,11 @@
     justify-content: center;
   }
 
-  /* Groups grid below nav */
+  /* Groups stacked vertically below nav */
   .desktop-menu-drawer__groups {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-lg);
     margin-top: var(--margin-xl);
   }
 
