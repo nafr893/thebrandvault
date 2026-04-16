@@ -586,11 +586,38 @@
     "section_yVCJA9": {
       "type": "section",
       "blocks": {
+        "text_RdA336": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h6><strong>WHO WE ARE</strong></h6>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.875rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "visibility": "both"
+          },
+          "blocks": {}
+        },
         "text_cJMHb9": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>WE CONVERT VISITORS INTO CUSTOMERS</h2>",
+            "text": "<h2>WE ARE SHOPIFY AND KLAVIYO EXPERTS<br/>ROOTED IN THE OUTDOOR INDUSTRY</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -616,8 +643,9 @@
         "text_fdCKrQ": {
           "type": "text",
           "name": "t:names.text",
+          "disabled": true,
           "settings": {
-            "text": "<p>That's our mission. We exist to show customers your products in the way they deserve to  </p>",
+            "text": "<p>We exist to convert visitors into loyal returning customers. </p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -644,7 +672,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "VIEW WORK",
+            "label": "LEARN MORE",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button",
@@ -658,6 +686,7 @@
         }
       },
       "block_order": [
+        "text_RdA336",
         "text_cJMHb9",
         "text_fdCKrQ",
         "button_etARH6"
@@ -1664,8 +1693,8 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "label": "VIEW PROJECT",
-                    "link": "shopify://pages/raised-hunting",
+                    "label": "COMING SOON",
+                    "link": "",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
@@ -1715,7 +1744,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Raised_Hunting_Cover_Pic_2.3.webp",
+                    "image": "shopify://shop_images/Kapture_Gear_Hero_V1.webp",
                     "link": "",
                     "image_ratio": "square",
                     "width": "fill",
@@ -1739,7 +1768,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h4>RAISED HUNTING</h4>",
+                    "text": "<h4>KAPTURE GEAR</h4>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1767,7 +1796,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "VIEW PROJECT",
-                    "link": "shopify://pages/raised-hunting",
+                    "link": "shopify://pages/kapture-gear",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
