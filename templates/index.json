@@ -538,8 +538,8 @@
             "button_kBBrVR": {
               "type": "button",
               "settings": {
-                "label": "COMING SOON",
-                "link": "",
+                "label": "VIEW SITE",
+                "link": "https://skregear.com",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
