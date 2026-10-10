@@ -175,7 +175,7 @@
               "type": "button",
               "settings": {
                 "label": "VIEW PROJECT",
-                "link": "shopify://pages/onward-energy",
+                "link": "shopify://pages/flag-nor-fail",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
