@@ -334,7 +334,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>ONWARD makes performance supplements for energy, hydration, and mental focus. Prior to working with us, they had an active customer base, however their customers weren't being engaged on a regular basis. <br/><br/>Our approach was to launch several email campaigns on a consistent basis to engage their existing customers. This resulted in attributed revenue increasing by 217.8%</p>",
+                    "text": "<p>FLAG NOR FAIL makes unfailing gear for work, adventure, and activewear. &nbsp;Prior to working with us, they had an active customer base, however their customers weren't being engaged on a regular basis. Email campaign cadence was low, and flows were outdated.&nbsp;<br/><br/>Our approach was to first overhaul their email flows and increase their baseline attributed revenue. Second, we launched email campaigns at a higher frequency, this also increased attributed revenue significantly.&nbsp;</p><p>Finally, we improved their contact signup by optimizing the email popup, which raised the opt-in rate by 1%. We did this by removing their 10% signup discount and reframing their existing mystery gift, which they were already adding to every order automatically.&nbsp;</p><p>The result: More sign ups, and 10% margin saved on every order.&nbsp;</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -2177,7 +2177,7 @@
         "color_scheme": "scheme-2",
         "background_media": "image",
         "video_position": "cover",
-        "background_image": "shopify://shop_images/ONWARD_Project_Banner_v3.webp",
+        "background_image": "shopify://shop_images/Y_Overalls_home_banner.jpg",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
