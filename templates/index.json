@@ -2018,7 +2018,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Owner of ONWARD and Flag Nor Fail</p>",
+                    "text": "<p>Owner of Flag Nor Fail</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
