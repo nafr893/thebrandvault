@@ -1336,7 +1336,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/T_K_Hunting_Cover_v1.webp",
+                    "image": "shopify://shop_images/flag-nor-fail-banner-2.png",
                     "link": "shopify://pages/t-k-huting",
                     "image_ratio": "square",
                     "width": "fill",
@@ -1360,7 +1360,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h4>T&K HUNTING</h4>",
+                    "text": "<h4>FLAG NOR FAIL</h4>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1388,7 +1388,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "VIEW PROJECT",
-                    "link": "shopify://pages/t-k-huting",
+                    "link": "shopify://pages/flag-nor-fail",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
@@ -1404,6 +1404,108 @@
                 "image_34HFGp",
                 "text_GQ7QVh",
                 "button_WAPJcQ"
+              ]
+            },
+            "card_kW6LFN": {
+              "type": "_card",
+              "name": "t:names.card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "image_WFQGKx": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/T_K_Hunting_Cover_v1.webp",
+                    "link": "shopify://pages/t-k-huting",
+                    "image_ratio": "square",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "visibility": "both"
+                  },
+                  "blocks": {}
+                },
+                "text_7kGVam": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h4>T&K HUNTING</h4>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0,
+                    "visibility": "both"
+                  },
+                  "blocks": {}
+                },
+                "button_T4UiVH": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "VIEW PROJECT",
+                    "link": "shopify://pages/t-k-huting",
+                    "open_in_new_tab": false,
+                    "style_class": "link",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100,
+                    "visibility": "both"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_WFQGKx",
+                "text_7kGVam",
+                "button_T4UiVH"
               ]
             },
             "card_NVHcbn": {
@@ -1817,6 +1919,7 @@
           },
           "block_order": [
             "card_V47NiC",
+            "card_kW6LFN",
             "card_NVHcbn",
             "card_mHyi8E",
             "card_ia9n4K",
