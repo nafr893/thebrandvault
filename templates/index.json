@@ -1591,8 +1591,8 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "label": "COMING SOON",
-                    "link": "",
+                    "label": "VIEW PROJECT",
+                    "link": "https://skregear.com",
                     "open_in_new_tab": false,
                     "style_class": "link",
                     "width": "fit-content",
