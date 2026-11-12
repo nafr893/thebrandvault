@@ -1336,7 +1336,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/flag-nor-fail-banner-2.png",
+                    "image": "shopify://shop_images/FNF_Hero_Image_TBV.png",
                     "link": "shopify://pages/t-k-huting",
                     "image_ratio": "square",
                     "width": "fill",
